@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+.jconfirm-box *,
+.jconfirm-box *:before,
+.jconfirm-box *:after {
+	box-sizing: border-box;
+}
+
+.jconfirm {
+	z-index: 99999999999999999999999 !important;
+}
+
+.jconfirm .jconfirm-box div.jconfirm-content-pane input {
+	height: inherit !important;
+	margin-bottom: 10px !important;
+	font-size: 16px !important;
+	color: #2c2a2c !important;
+	padding: 10px 20px 10px !important;
+	width: 100% !important;
+	display: block !important;
+	margin-bottom: 5px !important;
+	font-family: 'Rubik', sans-serif !important;
+	font-weight: normal !important;
+	background: white !important;
+	border: 1px solid #1d1d1d !important;
+	border-radius: 6px !important;
+}
+
+.jconfirm-box textarea {
+	width: 100% !important;
+	border: 2px solid rgba(0, 0, 0, .54) !important;
+	border-radius: 5px !important;
+}
+
+.jconfirm-box label {
+	color: #2c2a2c !important;
+	font-family: 'Rubik', sans-serif !important;
+	font-weight: normal !important;
+	margin-bottom: 5px !important;
+}
+
+.jconfirm.jconfirm-axiom-material .jconfirm-box .jconfirm-content .tooltip_form .control-label {
+	padding-right: 10px !important;
+}
+
+.jconfirm.jconfirm-axiom-material .jconfirm-box .jconfirm-buttons button.btn-default {
+	margin-left: 5px;
+	background-color: rgba(189, 195, 199, 0.6);
+	color: rgb(0, 0, 0);
+	font-weight: normal !important;
+	box-shadow: none;
+	margin-left: 15px;
+}
+
+.jconfirm .jconfirm-box.jconfirm-type-axiom {
+	animation-name: type-axiom;
+	border-top: 7px solid #00BCD4;
+}
+
+.jconfirm .jconfirm-box .jconfirm-buttons button.btn-blue {
+	background: #2c2a2c !important;
+	color: white !important;
+	font-weight: normal !important;
+	box-shadow: none;
+	margin-left: 15px;
+	margin-right: 10px;
+	border: 1px solid #2c2a2c;
+}
+
+.jconfirm .jconfirm-holder {
+	padding: 0 !important;
+	overflow: auto;
+}
+
+.jconfirm .jconfirm-box div.jconfirm-content-pane.no-scroll {
+	position: inherit !important;
+}
+
+.jconfirm-holder .container {
+	background: transparent;
+}
+
+.jconfirm .jconfirm-box-container {
+	min-width: 100% !important;
+	margin: auto;
+}
+
+/*scrollbar styles*/
+.jconfirm .jconfirm-box div.jconfirm-content-pane .jconfirm-content::-webkit-scrollbar {
+	width: 0.5em;
+	height: 0.5em;
+}
+
+.jconfirm .jconfirm-box div.jconfirm-content-pane .jconfirm-content::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px #ddd;
+}
+
+.jconfirm .jconfirm-box div.jconfirm-content-pane .jconfirm-content::-webkit-scrollbar-thumb {
+	background-color: #2ea29fc9;
+	outline: 1px solid #2ea29fc9;
+}
+
+
+
+/* Selection made modal */
+/* 
+  Issues: Rubik font not loading 
+*/
+.jconfirm-bg {
+	background-repeat: no-repeat;
+	background-color: rgba(#2D3B48, 0.25);
+}
+
+.jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box {
+	font-family: 'Rubik', sans-serif !important;
+	background: #fff;
+	box-shadow: none;
+	padding: 48px;
+	border-radius: 16px;
+	text-align: center;
+	width: 70vw; /* Width required to force box to dimension */
+}
+
+.jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box 
+.jconfirm-title-c {
+ 	padding-bottom: 8px;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box 
+.jconfirm-title-c .jconfirm-title {
+	font-family: 'Rubik', sans-serif !important;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2D3B48; /* Neutral 800 */
+	padding-bottom: 0;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box
+div.jconfirm-content-pane { 
+ 	margin: 16px 0;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box
+div.jconfirm-content-pane .jconfirm-content { 
+	font-family: 'Rubik', sans-serif !important;
+	font-size: 16px;
+	color: #718496; /* Neutral 600 */
+	padding: 0;
+	max-height: inherit;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box
+.jconfirm-buttons { 
+ 	padding-bottom: 0;
+ 	width: 100%;
+	display: block;
+}
+
+.jconfirm-buttons .btn::before, .jconfirm-buttons .btn::after {
+	display: none;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default {
+	font-family: 'Rubik', sans-serif !important;
+	font-size: 16px;
+	line-height: 1;
+	text-transform: capitalize;
+	border-radius: 8px;
+	padding: 12px 16px;
+	background-color: #35A29F !important;
+	color: #fff !important;
+	margin-right: 16px;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default:hover {
+	background-color: #2F928F !important;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default:last-child {
+	background-color: #fff !important;
+	color: #718496 !important;
+	border: 2px solid #EDF2F7;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default:last-child:hover {
+	background-color: #EDF2F7 !important;
+}

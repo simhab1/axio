@@ -1,0 +1,51 @@
+{
+   "action": {
+      "default_icon": "axiom-logo.png",
+      "default_tip": "Axioms"
+   },
+   "author": "Axiom AI Limited",
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "commands": {
+      "_execute_action": {
+         "suggested_key": {
+            "default": "Alt+Shift+X",
+            "mac": "Alt+Shift+X"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "content.css", "axiom-material.css", "lib/jquery-confirm.min.css", "axiomselector.css" ],
+      "js": [ "jquery.js", "content.js", "lib/jquery-confirm.min.js", "lib/moment.min.js", "axiomselector.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": {
+      "extension-pages": "extension-pages allow-scripts: unsafe-eval 'self'",
+      "sandbox": "sandbox allow-scripts: script-src 'self' https://www.google-analytics.com/analytics.js https://apis.google.com https://rec.smartlook.com; object-src 'self'"
+   },
+   "description": "Automate websites and scrape data. Quickly, without code.",
+   "externally_connectable": {
+      "matches": [ "*://*.axiom.ai/*", "*://*.tgwc.space/*", "*://localhost:*/*", "*://0.0.0.0:*/*", "*://*.linkedin.com/*", "*://*.bitmachine.co.uk/*", "*://*.apis.google.com/*" ]
+   },
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "icons": {
+      "128": "axiom-logo.png"
+   },
+   "key": "MHwwDQYJKoZIhvcNAQEBBQADawAwaAJhALFmbOE3H8Z7Mm2yD+cpgUrruZTtC3010/Bejyz5TK+rLj7QEH+n6RHwCyvOQERbcnLhfgCdESMxfuDfUcAjNVnQIHDc6SZNEtwNOywJhp5l3FuUlBpswRuU2aJ2I1IgDQIDAQAB",
+   "manifest_version": 3,
+   "name": "Axiom Browser Automation & Web Scraping",
+   "oauth2": {
+      "client_id": "733612197376-mc7mois00vsqb1gl8ua51nj5o04lmv86.apps.googleusercontent.com",
+      "scopes": [ "openid", "email", "profile", "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/spreadsheets" ]
+   },
+   "permissions": [ "activeTab", "notifications", "cookies", "storage", "unlimitedStorage", "tabs", "identity", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.7.0",
+   "web_accessible_resources": [ {
+      "extension_ids": [ "cpgamigjcbffkaiciiepndmonbfdimbb" ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "axiom-logo.png", "axiom-logo-new.png", "axiom-logo-long.png", "bots-at-work.png", "ban.svg", "times.svg", "plus.svg", "toggle-on.svg", "toggle-off.svg", "record-large.png", "record.png", "axiom-icon.png", "chevron-left.svg", "lightbulb.svg", "content.css", "lib/jquery-confirm.min.css", "axiombuilder.html", "axiomselector.css", "jquery.js", "content.js", "lib/jquery-confirm.min.js", "lib/moment.min.js", "axiomselector.js", "content.css", "axiom-material.css", "lib/jquery-confirm.min.css", "axiomselector.css" ]
+   } ]
+}

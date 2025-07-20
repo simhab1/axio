@@ -1,0 +1,93 @@
+body.axiom-sel-in-action {
+    cursor: pointer;
+}
+
+.axiom-suggested-group {
+    background: rgba(100, 253, 255, 0.3);
+    border-style:   dotted;
+    border-width: 3px;
+    border-color:   cyan;
+}
+
+.axiom-matched {
+    padding: 5px;
+}
+
+.axiom-border-highlight {
+    position: fixed !important;
+    z-index: 2147483647 !important;
+    background: white !important;
+    background-color: #50CFFE !important;
+    float: none !important;
+    border: 0 !important;
+    font-style: none !important;
+    outline: 0 !important;
+    text-align: left !important;
+    box-sizing: initial!important;
+
+}
+.axiom-border-highlight p{
+    padding: 0!important;
+    margin: 0!important;
+    line-height: 0!important;
+    display: flex!important;
+    align-items: center!important;
+    font-size: 12px!important;
+    float: none!important;
+    background: transparent!important;
+}
+
+.axiom-shield-overlay {
+    position: fixed !important;
+    z-index: 2147483647 !important;
+    background: white !important;
+    background-color: rgba(0, 0, 0, 0.301) !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    display: block !important;
+    float: none !important;
+    border: 0 !important;
+    font-style: none !important;
+    outline: 0 !important;
+    vertical-align: baseline !important;
+    text-align: left !important;
+    box-sizing: initial!important;
+
+}
+
+.axiom-shield-overlay::-webkit-scrollbar,
+#axiom-preview-wrapper::-webkit-scrollbar  {
+
+    display: none;
+}
+.axiom-sel-in-action .axiom-download {
+    min-width: 5px!important;
+    min-height: 5px!important;
+    display: inline-block!important;
+}
+
+.axiom-preview-wrapper p{
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+/**
+* Adding postion so that some sites let us click things within an anchor which uses overlay
+*/
+body:not(.tremolo-theme).axiom-sel-in-action a:not(.axiom-link) {
+    position: relative !important;
+}
+
+body:not(.tremolo-theme).axiom-sel-in-action a::after {
+    position: relative !important;
+}
+
+/*custom style break fix*/
+/*/bbc*/
+.orb-skip-links{
+    display: none;
+}
+/*/google*/
+.S6VXfe{
+    display: none !important;
+}
